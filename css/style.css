@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgPreto: rgb(0, 0, 0);
+    --naoMetal: rgb(180, 210, 100);
+    --gasNobre: rgb(100, 180, 225);
+    --metalAlcalino: rgb(245, 200, 100);
+    --metalAlcalinoTerroso: rgb(240, 230, 90);
+    --semiMetal: rgb(110, 200, 190);
+    --halogenio: rgb(170, 225, 255);
+    --outrosMetais: rgb(190, 210, 210);
+    --metalTransicao: rgb(245, 175, 175);
+    --lantanideo: rgb(150, 225, 225);
+    --actinidio: rgb(230, 190, 220);
+}
+
+body {
+    font: 1em/1 sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1em 5%;
+    background: var(--bgPreto);
+}
+
+
+/* FOREGROUND COLOR VARIABLES */
+
+.naoMetal {
+    background-color: var(--naoMetal);
+    color: var(--bgPreto);
+}
+
+.gasNobre {
+    background-color: var(--gasNobre);
+    color: var(--bgPreto);
+}
+
+.metalAlcalino {
+    background-color: var(--metalAlcalino);
+    color: var(--bgPreto);
+}
+
+.metalAlcalinoTerroso {
+    background-color: var(--metalAlcalinoTerroso);
+    color: var(--bgPreto);
+}
+
+.semiMetal {
+    background-color: var(--semiMetal);
+    color: var(--bgPreto);
+}
+
+.halogenio {
+    background-color: var(--halogenio);
+    color: var(--bgPreto);
+}
+
+.outrosMetais {
+    background-color: var(--outrosMetais);
+    color: var(--bgPreto);
+}
+
+.metalTransicao {
+    background-color: var(--metalTransicao);
+    color: var(--bgPreto);
+}
+
+.lantanideo {
+    background-color: var(--lantanideo);
+    color: var(--bgPreto);
+}
+
+.actinidio {
+    background-color: var(--actinidio);
+    color: var(--bgPreto);
+}
+
+
+/* TYPOGRAPHY STYLES */
+
+h1 {
+    margin: .5em 0;
+    font-size: calc(3vw + 2rem);
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: -.05em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p:last-child {
+    font-size: .8em;
+}
+
+
+/* GRID CONTAINER STYLES */
+
+main {
+    margin: auto;
+    max-width: 45em;
+    display: flex;
+}
+
+#grid-container {
+    flex-grow: 1;
+    min-width: 7em;
+}
+
+.col-hidden {
+    display: none;
+}
+
+
+/* GRID CELL */
+
+section {
+    height: 7em;
+    background: var(--bgPreto);
+    border: .125rem solid;
+    border-radius: .25rem;
+    line-height: 1.25;
+    margin-bottom: .5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span {
+    font-size: .75em;
+    position: absolute;
+    top: .3em;
+    left: .5em;
+}
+
+
+/* FOOTER */
+
+footer {
+    font-size: .8em;
+    text-align: left;
+    flex-basis: 13.5rem;
+    margin: -.25em 0 0 1em;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 1em;
+}
+
+li {
+    flex-basis: 100%;
+    line-height: 1.25;
+    margin-bottom: 1em;
+}
+
+li:before {
+    content: ' ';
+    display: inline-block;
+}
+
+@media only screen and (min-width:92.5em) {
+    @supports (display: grid) {
+        /* GLOBAL STYLES */
+        body {
+            font-size: .65em;
+            padding: 2em;
+        }
+        /* GRID CONTAINER STYLES */
+        main {
+            max-width: 130.5em;
+            display: block;
+        }
+        #grid-container {
+            display: grid;
+            grid-template-columns: repeat(18, 7em);
+            grid-gap: .25em;
+        }
+        .col-span16 {
+            grid-column: span 16;
+        }
+        .col-span10 {
+            grid-column: span 10;
+        }
+        .col-span3 {
+            grid-column: span 3;
+        }
+        .col-hidden {
+            display: block;
+            visibility: hidden;
+        }
+        /* GRID CELL */
+        section {
+            margin: 0;
+        }
+        section:hover {
+            transition: .2s;
+            transform: scale(1.5);
+            cursor: pointer;
+            z-index: 2;
+        }
+        /* FOOTER */
+        footer {
+            font-size: 1em;
+            width: 100%;
+            margin: 2em 0;
+        }
+        ul {
+            justify-content: center;
+        }
+        li {
+            flex-basis: auto;
+            margin-bottom: 0;
+        }
+        li+li {
+            margin-left: 2em;
+        }
+    }
+}
+
+@media only screen and (min-width:102.5em) {
+    /* GLOBAL STYLES */
+    body {
+        font-size: .75em;
+    }
+}
