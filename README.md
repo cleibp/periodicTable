@@ -25,10 +25,13 @@ Tabela Periódica construida com css
 ```sh
 .
 ├── README.md
+├── index.html
+└── css
+    ├── app.js
 ```
 
 ## 👋🏽 DEMO
-[Pages](https://cleibp.github.io/periodicTable/) 
+[Publicação em Github Pages](https://cleibp.github.io/periodicTable/) 
 
 ## Contatos
 
