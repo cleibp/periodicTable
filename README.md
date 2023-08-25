@@ -27,7 +27,7 @@ Tabela Periódica construida com css
 ├── README.md
 ├── index.html
 └── css
-    ├── app.js
+    ├── style.js
 ```
 
 ## 👋🏽 DEMO
