@@ -1,7 +1,7 @@
 <h1 align="center"> 🚀 Tabela Periódica </h1>
 
 ## ✍️ Descrição
-Tabela Periódica construida com css
+Tabela Periódica construida com css/flexbox
 
 
 ## 📥 Clone/Baixe
