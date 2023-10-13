@@ -31,7 +31,9 @@ Tabela Periódica construida com css/flexbox
 ```
 
 ## 👋🏽 DEMO
-[Publicação em Github Pages](https://cleibp.github.io/periodicTable/) 
+[Publicação em Github Pages](https://cleibp.github.io/periodicTable/) <br>
+
+[Publicação em Codepen](https://codepen.io/cleibp/pen/bGOJmxL)
 
 ## Contatos
 
